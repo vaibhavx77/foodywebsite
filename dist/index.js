@@ -57,6 +57,13 @@ app.get("/", (req, res) => {
             image: "/images/pancake.png",
             type: "dinner",
         },
+        {
+            name: "PIZZA",
+            price: 20,
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            image: "/images/pizza.png",
+            type: "lunch",
+        },
     ];
     res.json(foodData);
 });
