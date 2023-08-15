@@ -60,8 +60,8 @@ app.get("/", (req, res) => {
     ];
     res.json(foodData);
 });
-const port = 9000;
-app.listen(9000, () => {
-    console.log(`Server is running on port ${port}`);
+const PORT = process.env.PORT || 9000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
 //# sourceMappingURL=index.js.map
